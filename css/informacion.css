@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+
+}
+*::selection{
+    background-color: #35cdffbd;
+    color: rgb(107, 255, 250);
+    
+}
+
+*::-webkit-scrollbar{
+    width: 15px;
+    background-color:#52B3D9;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #98d9f3;
+    border-radius: 5px;
+    border: 2px solid#ffffff;
+}
+
+header{
+    background-image: url('../imagenes/fondo2.jpg');
+    background-position:center 0px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 64vh;
+
+
+}
+
+nav{
+    background-color: #52B3D9;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.enlace{
+    position: absolute;
+    padding: 5px 50px;
+    
+}
+.enlace img{
+    height: 90px;
+}
+.logo{
+    height: 50px;
+}
+ 
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0px 10px;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding-right:  15px;
+    border-radius: 10px;
+    padding-top: 30px;
+    font-family: 'Caveat', cursive;
+    
+}
+nav ul li a:hover{
+    box-shadow: 0px 0px 3px 4px;
+    color: rgb(255, 255, 255);
+    transition: 3s;
+}
+.icono{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 125px;
+cursor: pointer;
+margin-right: 20px;
+display: none;
+}
+.menu li a img{
+    padding-top: 30px;
+    height: 65px;
+    
+}
+#boton{
+    display: none;
+}
+
+
+
+.titulo{
+    text-align: center;
+    padding-top: 150px;
+    
+}
+.titulo h1{
+    color: aliceblue;
+    font-size: 64px;
+    text-shadow: 0px 0px 4px black;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 8px;
+    animation: 2s texto infinite alternate-reverse ;
+}
+@keyframes texto {
+    0%{
+        transform: scale(0.5);
+
+    }
+    100%{
+        transform: scale(1);
+        color: #6190E8;
+        text-shadow: 0px 0px 4px white;
+    }
+}
+.minfor{
+    display: block;
+    background-color: #52B3D9;
+}
+.titulo ul li a{
+    color: whitesmoke;
+    margin-top: 45px;
+    font-size: 33px;
+    font-family: 'Cinzel', serif;
+}
+.titulo ul li a:hover{
+    color: rgb(4, 35, 92);
+    margin-top: 40px;
+    font-size: 40px;
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+
+.mostrar{
+    display: block;
+}
+.esconder{
+    display: none;
+}
+
+
+.boton-arriba{
+    width: 60px;
+    height: 60px;
+    background-color: #4fc5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px black;
+    transition: ease 0.3s;
+    transform: scale(0);
+ 
+}
+.boton-arriba img{
+    width: 100%;
+    border-radius: 50%;
+}
+.boton-arriba:hover{
+    transform: scale(1.1);
+box-shadow: 0px 0px 2px 2px cyan;
+    
+}
+
+
+
+
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #52B3D9;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family: 'Cardo', serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-family: 'Architects Daughter', cursive;
+}
+.pie-pagina .grupo-1 .box .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    line-height: 10px;
+    text-align: center;
+     }
+
+     .pie-pagina .grupo-1 .box .red-social a img{
+        width: 45px;
+    height: 45px;
+     }
+     .pie-pagina .grupo-1 .box h3{
+        font-family: 'Cardo', serif;
+     }
+.pie-pagina .grupo-2{
+    background-color: aqua;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 p{
+    font-size: 15px;
+    font-family: 'Cardo', serif;
+}
+
+h2{
+    font-size: 55px;
+    text-shadow: 0px 0px 6px black;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 5px;
+}
+
+.definicion{
+    padding: 50px 0px;
+    background-color: rgb(209, 246, 249);
+    text-align: center;
+    color: slategrey;
+}
+.definicion h2{
+    color: rgb(55, 250, 250);
+  
+}
+.texto1{
+    font-size: 25px;
+    padding: 0px 200px;
+    font-family: 'Cardo', serif;
+    
+}
+
+.img1{
+    margin: 50px;
+    padding: 35px 25px;
+    box-shadow: 0px 0px  15px black;
+    border-radius: 20px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    
+}
+.img1:hover{
+    background-color: rgb(172, 201, 249);
+    margin: 50px;
+    padding: 35px 25px;
+    box-shadow: 0px 0px  20px rgb(0, 0, 162);
+    border-radius: 40px;
+    display: inline-block;
+    transition: 3s;
+    
+}
+.img1 img{
+    height: 120px;   
+}
+
+.caracteristicas{
+    background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ height: 160vh;
+    padding: 50px;
+    
+}
+.cartexto h2{
+    color: #92d3f6; 
+    text-align: center;
+}
+
+.cartexto p {
+    text-align: center;
+    font-size: 30px;
+    color: azure;
+    font-family: 'Young Serif', serif;
+}
+.grupoc{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.car{
+width: 370px;
+height: 350px;
+text-align: center;
+padding: 20px;
+margin: 40px;
+border-radius: 30px;
+box-shadow: 0px 0px 10px 5px rgb(61, 61, 61);
+
+}
+
+.car:hover{
+    background-color: rgba(255, 255, 255, 0.756);
+}
+.car h3{
+    font-size: 30px;
+    color: rgb(8, 8, 119);
+    font-family: 'Kaushan Script', cursive;
+}
+.car h3:hover{
+    font-size: 35px;
+    color: rgb(40, 40, 156);
+    text-shadow: 0px 0px 8px rgb(96, 127, 247);
+}
+.car p{
+    font-size: 17px;
+    color: cadetblue;
+    font-family: 'Macondo', cursive;
+    font-weight: 600;
+    
+}
+.car img{
+    width: 230px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.separar{
+    padding: 10px 0px;
+    background-image: url('../imagenes/tomaagua.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   margin: 0px 0px;
+   height: 75vh;
+}
+
+.beneficio{
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   height: 110vh;
+   text-align: center;
+   
+}
+.titulob{
+    margin: 10px;
+}
+.titulob h2{
+  font-size: 55px;
+  color: #0b2e40;
+  text-shadow: 0px 0px 5px white;
+  
+}
+.textobene{
+    font-size: 28px;
+    color: rgb(54, 174, 221);
+    font-family: 'Young Serif', serif;
+    text-shadow: 0px 0px 4px white;
+}
+
+
+.listabeneficio{
+    width: 1000px;
+    height: 500px;
+    border: solid 5px#def4ff;
+    box-shadow: 0px 0px 3px 4px black;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.separabene{
+    width: 1000%;
+    height: 100%;
+    display: flex;
+    padding: 0px;
+   
+}
+.lista{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.textobe{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0px 100px;
+    top: 100px;
+    
+    
+    
+}
+.textobe h3{
+    text-shadow: 0px 0px 8px black;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    font-size: 45px;
+    color: white;
+}
+
+.textobe p{
+    padding: 15px;
+    font-size: 20px;
+    background-color: #75d6f787;
+    color: rgb(13, 11, 11);
+    text-shadow: 0px 0px 5px 10px white;
+    font-family: 'Playpen Sans', cursive;
+   font-weight: none;
+}
+
+.lista img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+}
+.btn-de , .btn-iz{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top:50%;
+    font-size: 1.5em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transform: translate(0,-50%);
+    transition: 0.5s ease;
+    user-select: none;
+
+}
+.btn-de img ,.btn-iz img{
+    width: 100%;
+}
+.btn-de:hover , .btn-iz:hover{
+background-color: #a8a8a8a0;
+}
+
+.btn-de{
+    right: 10px;
+}
+
+.btn.iz{
+    left: 10px;
+}
+
+
+.interesante{
+
+    font-size: 55px;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    letter-spacing: 6px;
+    padding: 10px;
+   
+}
+.datos1 , .datos2 , .datos3{
+    padding: 100px 0px;
+    text-align: center;
+    background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   margin: 5px 0px;
+   height: 70vh;
+}
+.datos1{
+    background-image: url('../imagenes/dato1.jpg');
+}
+
+.datos2{
+    background-image: url('../imagenes/dato2.jpg');
+}
+.datos3{
+    background-image: url('../imagenes/dato3.jpg');
+}
+
+.datostxt h2{
+    font-size: 50px;
+    color: darkblue;
+    text-shadow: 0px 0px 5px white;
+    font-family: 'Kaushan Script', cursive;
+}
+.datostxt p{
+    font-size: 30px;
+    padding: auto;
+    color: #0b2e40;
+    padding: 0px 100px;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 4px 3px  white;
+
+}
+
+.consumoagua{
+    background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 60vh;
+padding: 15px;
+}
+.aguari h2{
+    text-align: left;
+    color: yellow;
+    font-size: 50px;
+    text-shadow: 0px 0px 5px black;
+}
+.aguari p{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Macondo', cursive;
+}
+.imagenagua{
+width: 250px;
+height: 250px;
+border-radius: 20px;
+margin: 10px;
+    box-shadow: 0px 0px 5px 3px black;
+    animation: aguarica 10s alternate-reverse infinite;
+}
+.imagenagua img{
+    width: 100%;
+    border-radius: 20px;
+   
+}
+
+@keyframes aguarica {
+    0%{
+        transform: translateX(1100px);
+    }
+   
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+
+h2:hover{
+    font-size: 60px;
+    transition: 2s;
+    
+}
+
+@media(max-width:1400px){
+   
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 12px;
+
+    }
+    .enlace img{
+        height: 50px;
+    }
+.menu li a img{
+    padding-top: 10px;
+    height: 50px;
+}
+
+
+.titulo ul li a{
+    font-size: 15px;
+}
+.titulo ul li a:hover{
+    font-size: 18px;
+}
+.caracteristicas{
+    height: 230vh;
+   
+}
+.grupoc{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+   
+}
+.grupoc  .car{
+    width: 300px;
+height: 400px;
+padding: 15px;
+margin: 30px;
+}
+
+.listabeneficio{
+    width: 700px;
+}
+
+.textobe{
+    text-align: center;
+    top: 15px;
+    width: 100%;
+    font-size: 30px;
+    padding: 12px;
+}
+
+.textobe p{
+display: block;
+    font-size: 15px;  
+}
+.btn-de, .btn-iz{
+    top: 400px;
+    margin: 10px;
+ }
+
+.consumoagua{
+    height: 80vh;
+}
+    .imagenagua{
+            animation: aguarica 8s alternate-reverse infinite;
+        }
+        
+        
+        @keyframes aguarica {
+            0%{
+                transform: translateX(560px);
+            }
+           
+            100%{
+                transform: translateX(10px);
+            }
+        }
+}
+
+
+ @media(max-width:860px){
+    .icono{
+        display: block;
+
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #52B3D9;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .menu li a img{
+        padding-top: 30px;
+        height: 60px;
+        
+    }
+    
+    nav ul li {
+        
+       display: block;
+       margin: 50px 0px;
+       line-height: 35px;
+       text-align: center;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    .pie-pagina .grupo-1{
+       
+        padding: 30px 0px;
+            width: 100%;
+            margin: auto;
+            display: block;
+    }
+         .pie-pagina .grupo-1 .box .red-social a img{
+            width: 35px;
+        height: 35px;
+         }
+    
+    #boton:checked ~  ul{
+        left: 0;
+    }
+.titulo h1{
+font-size: 30px;
+}
+    .titulo ul li a{
+        font-size: 15px;
+    }
+    .texto1{
+        padding: 15px;
+        text-align: justify;
+    }
+.minfor{
+    display: block;
+
+}
+.minfor li {
+    margin: 15px;
+
+}
+
+.caracteristicas{
+  
+  height: 410vh;
+    padding: 5px;
+}
+   
+    .grupoc{
+        display: block;
+        
+    }
+    .car{
+        width: 290px;
+height: 350px;
+padding: 20px;
+margin: 30px;
+float: left;
+    }
+   
+    .cartexto h2{
+        font-size: 30px;
+    }
+    .beneficio{
+        height: 115vh;
+    }
+    
+  
+    
+    .separabene{
+        width: 1000%;
+        height: 520px;
+    
+    }
+    .textobe{
+        text-align: center;
+        top: 15px;
+        width: 100%;
+        font-size: 27px;
+        padding: 10px;
+    }
+    
+    
+    .titulob h2{
+        font-size: 35px;
+    }
+.textobe h3{
+    font-size: 30px;
+}
+.textobe p{
+    font-size: 15px;
+}
+.listabeneficio {
+    width: 95%;
+    height: 520px;
+}
+
+.btn-de, .btn-iz{
+   top: 450px;
+   margin: 10px;
+}
+
+    .datos1 , .datos2 , .datos3{
+        padding: 60px 0px;
+       margin: 5px 0px;
+       height: 78vh;
+    }
+    .interesante{
+        font-size: 40px;
+    }
+    
+    .datostxt h2{
+        font-size: 40px;
+    }
+    .datostxt p{
+        font-size: 25px;
+        
+        padding: 0px 70px;
+        
+    }
+.consumoagua{
+    height: 110vh;
+}
+    .imagenagua{
+            animation: aguarica 8s alternate-reverse infinite;
+        }
+        
+        
+        @keyframes aguarica {
+            0%{
+                transform: translateX(100px);
+            }
+           
+            100%{
+                transform: translateX(5px);
+            }
+        }
+        
+}
+
+
+

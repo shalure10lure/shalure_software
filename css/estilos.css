@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+
+}
+*::selection{
+    background-color: #35cdffbd;
+    color: rgb(107, 255, 250);
+}
+
+*::-webkit-scrollbar{
+    width: 15px;
+    background-color:#52B3D9;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #98d9f3;
+    border-radius: 5px;
+    border: 2px solid#ffffff;
+}
+header{
+    background-image: url('../imagenes/agua2.jpg');
+    background-position:center 0px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+
+}
+nav{
+    background-color: #52B3D9;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+.enlace{
+    position: absolute;
+    padding: 5px 50px;
+    
+}
+.enlace img{
+    height: 90px;
+}
+.logo{
+    height: 50px;
+}
+ 
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0px 10px;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding-right:  15px;
+    border-radius: 10px;
+    padding-top: 30px;
+    font-family: 'Caveat', cursive;
+    
+}
+nav ul li a:hover{
+    box-shadow: 0px 0px 3px 4px;
+    color: rgb(255, 255, 255);
+    transition: 3s;
+}
+.icono{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 125px;
+cursor: pointer;
+margin-right: 20px;
+display: none;
+}
+.menu li a img{
+    padding-top: 30px;
+    height: 65px;
+    
+}
+#boton{
+    display: none;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 120px;
+}
+.titulo h1{
+    color: rgb(0, 37, 68);
+    font-size: 55px;
+    font-family: 'Abril Fatface', serif;
+    transition: 1s;
+}
+.titulo h1:hover{
+    text-shadow:0px 0px 5px rgb(0, 37, 68);
+    color: white;
+    font-size: 60px;
+}
+.titulo p{
+    color: rgb(93, 106, 173);
+    text-shadow: 0px 0px 5px  white;
+    margin-top: 25px;
+    font-size: 40px;
+    padding: 0px 50px;
+    text-align: center;
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+}
+.btn-1{
+    display: inline-block;
+    background-color: aqua;
+    margin-top: 30px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+}
+.btn-1:hover{
+    background-color: white;
+    color: aqua;
+    box-shadow: 0px 0px 4px 4px cadetblue;
+}
+
+.services{
+    padding: 50px 0px;
+    text-align: center;
+    color: slategrey;
+}
+.services h2{
+    font-size: 55px;
+    font-family: 'Abril Fatface', serif;
+  
+}
+.txt-1{
+    font-size: 25px;
+    margin: 20px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.servicio{
+    margin: 50px;
+    padding: 35px 25px;
+    box-shadow: 0px 0px  15px black;
+    border-radius: 20px;
+    display: inline-block;
+    width: 300px;
+    height: 340px;
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    
+}
+.servicio img{
+    height: 170px;
+    
+}
+.servicio h3{
+    font-size: 35px;
+    margin: 20px;
+    font-family: 'Playpen Sans', cursive;
+   font-weight: 600;
+}
+
+
+
+ @keyframes animacion1 {
+    0%{
+        background-color: rgb(0, 234, 255);
+        transform: scale(1);
+        
+    }
+    20%{
+        background-color: rgb(114, 173, 249);
+        transform: scale(0.8);
+        
+    }
+    40%{
+        background-color: rgb(198, 250, 255);
+        transform: scale(1);
+        
+    }
+    60%{
+        background-color: rgb(114, 173, 249);
+        transform: scale(0.8);
+        
+    }
+    80%{
+        background-color: rgb(0, 234, 255);
+        transform: scale(1);
+        
+    }
+    100%{
+        background-color: rgb(198, 250, 255);
+        transform: scale(1);
+        
+    }
+ }
+
+
+
+.porfolio{
+     justify-content: center;
+    padding: 50px 0px;
+    color: black;
+    display: flex;
+}
+.porfolio-txt h2{
+    font-size: 55px;
+    margin: 35px;
+    font-family: 'Abril Fatface', serif;
+}
+.porfolio-txt p{
+    font-size: 25px;
+    margin: 0px 135px 55px 0px;
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.imgs img{
+    
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec{
+    padding: 100px 0px;
+    background-image: url('../imagenes/fondoagua.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   margin: 35px 0px;
+}
+.bg-txt{
+    padding: 100px 0px;
+    text-align: center;
+    color: white;
+}
+.bg-txt h2{
+    font-size: 65px;
+    margin-bottom: 35px;
+    text-shadow: 0px 0px 9px black;
+    font-family: 'Abril Fatface', serif;
+    font-weight: 700;
+}
+.bg-txt p{
+    font-size: 35px;
+    padding:0px 80px;
+    margin-bottom: 35px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+
+}
+
+
+
+.numeros-contenedor{
+    padding: 50px 0px;
+    text-align: center;
+    color: slategrey;
+  
+}
+.numeros {
+    margin-right: 50px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+.numeros-contenedor h3{
+    font-size: 75px;
+    margin: 15px;
+    font-family: 'Abril Fatface', serif;
+    transition: 1s;
+}
+.numeros-contenedor h3:hover{
+    text-shadow:0px 0px 5px rgb(0, 37, 68);
+    color: white;
+    font-size: 80px;
+}
+.numeros img{
+    border-radius: 20px;
+   width: 250px;
+    margin-bottom: 25px;
+
+}
+.numeros img:hover{
+    border-radius: 50%;
+    width: 300px ;
+    transition: 1s;
+    box-shadow: 0px 0px 10px 6px #52B3D9;
+}
+
+.numeros p{
+    font-size: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+
+
+.boton-arriba{
+    width: 60px;
+    height: 60px;
+    background-color: #4fc5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px black;
+    transition: ease 0.3s;
+    transform: scale(0);
+ 
+}
+.boton-arriba img{
+    width: 100%;
+    border-radius: 50%;
+}
+.boton-arriba:hover{
+    transform: scale(1.1);
+box-shadow: 0px 0px 2px 2px cyan;
+    
+}
+
+
+
+
+
+
+h2{
+    transition: 1s;
+}
+h2:hover{
+    text-shadow:0px 0px 5px rgb(0, 37, 68);
+    color: white;
+    font-size: 60px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #52B3D9;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family: 'Cardo', serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-family: 'Architects Daughter', cursive;
+}
+.pie-pagina .grupo-1 .box .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    line-height: 10px;
+    text-align: center;
+     }
+
+     .pie-pagina .grupo-1 .box .red-social a img{
+        width: 45px;
+    height: 45px;
+     }
+     .pie-pagina .grupo-1 .box h3{
+        font-family: 'Cardo', serif;
+     }
+.pie-pagina .grupo-2{
+    background-color: aqua;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 p{
+    font-size: 15px;
+    font-family: 'Cardo', serif;
+}
+
+
+
+@media(max-width:1260px){
+    header{
+        background-image: url('../imagenes/agua2.jpg');
+        background-position:center 0px ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 12px;
+
+    }
+    .enlace img{
+        height: 50px;
+    }
+.menu li a img{
+    padding-top: 10px;
+    height: 50px;
+
+}
+
+
+.titulo h1{
+    color: rgb(0, 37, 68);
+    font-size: 50px;
+}
+.titulo p{
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+}
+ @media(max-width:860px){
+    .icono{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #52B3D9;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .menu li a img{
+        padding-top: 30px;
+        height: 60px;
+        
+    }
+    
+    nav ul li {
+        
+       display: block;
+       margin: 50px 0px;
+       line-height: 35px;
+       text-align: center;
+    }
+    nav ul li a{
+        font-size: 20px;
+        
+    }
+    li a:hover{
+        background-color: none;
+        color: red;
+
+    }
+    #boton:checked ~  ul{
+        left: 0;
+    }
+    .pie-pagina .grupo-1{
+       
+        padding: 30px 0px;
+            width: 100%;
+            margin: auto;
+            display: block;
+    }
+         .pie-pagina .grupo-1 .box .red-social a img{
+            width: 35px;
+        height: 35px;
+         }
+    
+    .porfolio{
+        padding: 10px 5px;
+        color: black;
+        display: flex;
+    }
+    .porfolio-txt h2{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .porfolio-txt p{
+        font-size: 10px;
+        margin: 0px 50px 20px 0px;
+    
+    }
+    
+    .imgs img{
+        
+        width: 150px;
+        margin: 0px 10px;
+    }
+
+    .titulo h1{
+        color: rgb(0, 37, 68);
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .titulo p{
+        color: rgb(25, 39, 105);
+        margin-top: 25px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+}
